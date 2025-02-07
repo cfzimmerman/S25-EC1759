@@ -35,6 +35,7 @@
 \end{itemize}
 
 \textbf{1.2}
+
 Suppose the bank raises $n < 10$ units of equity. 
 \begin{itemize}
   \item Senior debt: $0.2n + 0.8 \cdot 70 = 56 + 0.2n$. 
@@ -45,6 +46,107 @@ Suppose the bank raises $n < 10$ units of equity.
 $60$ percent of the value accrues to debt, and $40$ percent accrues to equity. Say $n = 8$. Senior debt is now worth $57.6$, sub debt is worth $13.2$, and equity is worth $7.2$. In this example, equity gets an increase of 3.2 for an investment of 8, which is a bad deal.
 
 \textbf{1.3}
-TO DO
+
+Valuations after conversion:
+\begin{itemize}
+  \item Senior debt: $0.2 \cdot 0 + 0.8 \cdot 70 = 56$. 
+  \item Equity: $0.2 \cdot 10 + 0.4 \cdot 30 = 14$.
+\end{itemize}
+
+Sub debt must receive $10$ of post-conversion equity to accept. That gives them $\frac{10}{14} = 71\%$ of the equity. The original shareholders keep $4$ of value. 
+
+\textbf{1.4}
+
+With a holdout, there's 70 senior debt and 1 sub debt, giving this valuation: 
+
+\begin{itemize}
+  \item Senior debt: $0.2 \cdot 0 + 0.8 \cdot 70 = 56$. 
+  \item Sub debt: $0.4 \cdot 0 + \0.6 \cdot 1 = 0.6$.
+  \item Equity: $0.4 \cdot 0 + 0.2 \cdot 9 + 0.4 \cdot 29 = 13.4$.
+\end{itemize}
+
+The holdout needs $E_{h} > 0.6$ to accept, which rounds up to $\frac{0.6}{14} = 4.3\%$ of the post-conversion equity. For every sub debt owner to not hold out, the equity offer needs to give this much for each of the 20 units of sub debt, resulting in $4.3 \cdot 20 = 86\%$ of the post-conversion equity.
+
+\newpage
+
+\textbf{1.5}
+
+Sub debt holders have a nothing or everything payoff in the $0$, $70$, and $100$ outcomes. However, in the $20$ percent case of $80$, the $10$ surplus after paying off senior debt must divided between $20$ in claims. 
+
+Fewer sub debt claims mean there's more leftover in the $80$ outcome. If the example is modified so that every outcome is all or nothing for sub debt, then it gets no premium in a voluntary exchange. This can be reached by either decreasing the face value of sub debt to 10 or increasing the partial payoff case. Consider valuations if the $80$ case is $90$ instead.
+
+\begin{itemize}
+  \item Assets: $0.2 \cdot 0 + 0.2 \cdot 70 + 0.2 \cdot 90 + 0.4 \cdot 100 = 72$.
+  \item Senior debt: $0.2 \cdot 0 + 0.8 \cdot 70 = 56$. 
+  \item Sub debt: $0.4 \cdot 0 + 0.6 \cdot 20 = 12$.
+  \item Equity: $0.6 \cdot 0 + 0.4 \cdot 10 = 4$.
+\end{itemize}
+
+
+If all sub debt is converted to equity, the resulting equity is worth $16$. A zero-premium conversion gives sub debt owners $\frac{12}{16} = 75\%$ of the post-conversion equity. 
+
+If $1$ sub debt holds out, their value is $0.2 \cdot 1 + 0.4 \cdot 1 = 0.6$. To convert, they require $\frac{0.6}{16} = 3.75\%$ of equity. This implies sub debt needs $3.75 \cdot 20 = 75\%$ of the equity to convert, which is a zero-premium conversion.
+
+\textbf{1.6}
+
+Values with a 50 percent bailout possibility: 
+
+\begin{itemize}
+  \item Senior debt: $0.2(0.5 \cdot 70) + 0.8(70) = 63$.
+  \item Sub debt: $0.4(0.5 \cdot 20) + 0.2(0.5 \cdot 10 + 0.5 \cdot 20) + 0.4 \cdot 20 = 15$.
+  \item Equity: $0.6 \cdot 0 + 0.4 \cdot 10 = 4$.
+\end{itemize}
+
+After a sub debt conversion, equity would be worth $0.4 \cdot 0 + 0.2 \cdot 10 + 0.4 \cdot 30 = 14$. Government assistance is inflating the value of sub debt, and that value is lost once converted to equity. Current sub debt is worth $15$. The value of all equity after conversion would be $14$, so there's no way to compensate the sub debt owners with enough equity to make the offer work.
+
+Government assistance is adding perceived (derisking) value to debt that doesn't translate into equity, which makes equity unable to compensate debt enough to restructure. If policy makers announced that they absolutely would not support debt upon failure, then the value of debt would fall back to original levels and a deal like in Q1.4 could be made. 
+
+\newpage
+
+\textbf{2.1}
+
+At $t = 2$, the CMOs produce $210$ of cash. Toxic Limited (TL) also has $\$20$ in reserve. TL will owe $200 \cdot 1.05 = \$210$ at $t = 2$, which is exactly enough to pay every investor with the matured CMOs. If everyone else keeps their money in, I know the bank will have enough to pay me back with interest too, so I choose to stay in until $t = 2$ and get back $\$1.05$ instead of just $\$1$. 
+
+\textbf{2.2}
+
+At $t = 1$, the first $20$ withdrawals will be satisfied with TL's cash reserves. That leaves $160$ in remaining withdrawals. TL will need to sell its CMOs for $\$160$, and all proceeds from that early sale will be used to pay the remaining claims at $t = 1$. At $t = 2$, TL has no cash and no CMOs, so there's nothing to pay the remaining 20 investors with. In this case, it's better to withdraw at $t = 1$ and get something rather than nothing.
+
+\textbf{2.3}
+
+Nash equilibrium outcomes:
+\begin{itemize}
+  \item All hold until $t = 2$: If I know the other investors are holding until $t = 2$, I can either withdraw at $t = 1$ for a payment of $\$1$, or I can wait until $t = 2$ for a payment of $\$1.05$. It's optimal for me to hold and earn the extra $\$0.05$. Since this logic follows for everyone, this is a Nash Equilibrium.
+  \item All withdraw at $t = 1$: If I know the other investors are withdrawing at $t = 1$, I can either withdraw at $t = 1$ for a payment $p \gt 0$, or I can withdraw at $t = 2$ for a payment of $\$0$. In this case, it's optimal for me and everyone else to withdraw at $t = 1$, making a Nash Equilibrium. 
+\end{itemize}
+
+The rest of the question explores the presence of a lender of last resort. Another weight on outcome might be market sentiment. If most banks are stable and the other investors seem content, they'll reinforce eachother into the $t = 2$ Nash equilibrium and enjoy the payoff. However, if sentiment sours (maybe because other banks are failing), investors are likely to start looking at the door. As soon as the TC investment feels at risk, everyone will try withdrawing at $t = 1$, causing the other equilibrium. In general, I expect the $t = 2$ equilibrium to be more common in a stable market.
+
+\textbf{2.4}
+
+After the equity injection, TL has $\$270$ in cash. At $t = 1$, TL receives $\$180$ in withdrawals, which are all paid from cash reserves. That leaves $\$90$ cash and the CMOs at $t = 2$ for a total of $90 + 210 = 300$. The remaining 20 investors can be paid back in full. Even if everyone else withdraws, I can still hold and get $\$1.05$, making it advantageous to hold my investment until $t = 2$. Because this logic applies to everyone, the other creditors will also decide to hold until $t = 2$, and a bank run is no longer an equilibrium.
+
+\textbf{2.5}
+
+In the scenario from $2.4$, the wealthy investor puts in $\$250$ to essentially buy out $180$ other investors at $t = 1$. At $t = 2$, there are 20 claims to $1.05$ for a liability of $\$21$, the CMOs pay out $\$210$, and there's $\$70$ of untouched cash from the initial investment. The investor put in $\$250$ and saw $210 + 70 - 21 = \$259$ as a result, increasing the value of their bank shares. Again this works because the investor's capital is basically buying $\$180$ of CMOs from the other creditors at $t = 1$, capturing their $180 \cdot 0.05 = \$9$ payoff.  
+
+This only works when the investor steps in during a panic. If the investor's money came at $t = 0$, the creditors would have no reason to sell their CMOs at $t = 1$, and the investor's money wouldn't be used for anything.
+
+\textbf{2.6}
+
+At $t = 2$, the CMOs mature into $\$175$, and the 200 investors expect $\$210$ in repayment. The bank has $\$20$ cash, so there's a $210 - 175 - 20 = \$15$ hole in the balance at $t = 2$. The problem specifies "the money is shared evenly among withdrawing depositors" for $t = 1$, and I'll assume the same for $t = 2$, meaning every investor gets back $\frac{175 + 20}{200} = 0.975$. They get less money back than they put in.
+
+If I know that everyone waiting until $t = 2$ is getting $p < \$1$, I want to withdraw at $t = 1$ and get my full $\$1$ back. Everyone else will think the same. So, if the expected value of the mature CMOs plus reserve cash falls below what's needed to fully pay all creditors, everyone will rush to get out at $t = 1$.
+
+The wealthy investor will not want to step in. They could plug the $t = 1$ hole with $\$200$ cash, but the CMOs at $t = 2$ would only pay back $\$175$, making the wealthy investor waste $\$25$ bailing out the other creditors.
+
+\textbf{2.7}
+
+This example demonstrates the difference between a liquidity and solvency crisis.
+
+In a liquidity crisis, the bank's present-value of assets is too low to pay off creditors but will be enough to pay off all creditors after the assets mature. If creditors sense that withdrawals will force the bank to sell immature assets now to satisfy obligations, then they run because there won't be enough cash or maturing assets later to pay off the remaining creditors. The government can inject liquidity to pay off the creditors now in cash, which allows the bank to hold the assets to maturity and fully repay the government later with the matured assets. The issue in a liquidity crisis is only the timing of withdrawals, not the future value of the assets. By guaranteeing liquidity, the government recalibrates the other creditors to hold their claims to maturity, establishing stability at no cost to the taxpayer.  
+
+In a solvency crisis, the bank's assets have fallen in value below their ability to ever pay off all creditors. Creditors try to get out immediately because there isn't enough value to pay off everyone later. If the government injects liquidity to pay the creditors in cash, the government is left with the fallen assets the other creditors didn't want. The large investor takes a loss equal to the difference between what the creditors were owed and what the matured assets are worth, which is a bad deal and doesn't work.
+
+Government intervention makes everyone better off in a liquidity crisis but not in a solvency crisis. The promise of government intervention suggests that bank runs should (theoretically) only happen due to insolvency, not illiquidity. Evaluating this condition requires accurately assessing the future value of the assets and whether their matured value meets/exceeds the cash needed to pay off creditors right now. 
 
 \end{document}
