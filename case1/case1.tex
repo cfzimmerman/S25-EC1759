@@ -1,0 +1,94 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fullpage}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{enumitem}
+\usepackage{fourier}
+\usepackage[normalem]{ulem}
+
+
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\np}{\mathop{\rm NP}}
+
+
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0in}
+
+\begin{document}
+
+
+        \section*{Econ 1759: Case 1}
+        \textit{Cory Zimmerman}
+
+\textbf{(1)}
+
+On December 9, 1998:
+\begin{itemize}
+  \item Market value of Ubid shares: 
+    \begin{itemize}
+      \item Total: 9,146,883 shares $\cdot$ \$35.6875/share = \$326,429,387.06.
+      \item Owned by the external investors: 1,817,000 shares $\cdot$ \$35.6875/share = \$64,844,187.50
+      \item Owned by CC: \$326,429,387.06 - \$64,844,187.50 = \$261,585,199.56 
+    \end{itemize} 
+  \item Market value of CC shares: 10,238,703 shares $\cdot$ \$22.75 = \$232,930,493.25
+  \item Implicit value on CC's other assets: \$232,930,493.25 - \$261,585,199.56 = -\$28,654,706.31
+\end{itemize}}
+
+\textbf{(2.i)}
+
+Assuming CC completes the plan it announced, the remaining 80 percent of Ubid will go to CC's investors in six months. CC holds 9,146,883 - 1,817,000 = 7,329,883 Ubid shares. Each CC share represents a future claim to 7,329,883 / 10,238,703 = 0.7159 Ubid shares (1.3968 CC shares represents a Ubid share).
+
+Assume CC's current value is only the stockholder equity on its balance sheet: \$48,466,000. That accounts for 48,466,000 / 10,238,703 = \$4.7336/share of value. Let the remaining \$22.75 - \$4.7336 = \$18.0164 of its share value be the ownership stake in UB. This implies a Ubid value of \$18.0164 * 1.3968 = \$25.1653/share. This reveals a difference of \$35.6875 - \$25.1653 = \$10.5222/share to exploit. 
+
+For simplicity, I'll choose to ignore other aspects of the businesses. The only change I expect in the next six months is a price correction towards either the current market Ubid valuation or the current CC implied Ubid valuation.
+
+As a "strong believer in portfolio diversification", I commit 5 percent of the portfolio to this strategy for \$1 million in total.
+
+I'd like the same payoff for a correction in either direction, which gives the following inequalities.
+
+$$ 0.7159 * CC = UB $$
+$$ 22.75 * CC + 35.6875 * UB = 1000000 $$
+
+This suggests I go long 20,704 shares on CC and short 14,822 shares of UB for a total cost of 20,704 * \$22.75 + 14,822 * \$35.6875 = \$999,976. Note: I'm treating the proceeds of the short sale kept as a margin requirement as the "cost" of shorting. 
+
+Upon successful conversion, my 20,704 shares of CC yield 14,822 shares of UB. 
+
+If the market price of CC's shares corrects upward to \$35.6875, I cover my short with the converted Ubid shares, pocket the \$10.5222 * 14,822 = \$155,960.05 difference, and sell the remaining 20,704 CC shares. 
+
+If the market price of UB corrects downward to \$25.1653, I can exit my CC position at no loss and cover my UB shorts for a profit of \$10.5222 * 14,822 = \$155,960.05.
+
+As long as the conversion goes through and the market prices converge, the fall in UB plus the rise in CC produces the same level of return.
+
+\textbf{(2.ii)}
+
+\begin{itemize}
+  \item Exit: As soon as CC shares convert to UB, I want to exit the position completely. This isn't a long term investment in CC or UB's fundamentals, and I want to be out as soon as the known profit opportunity has materialized. 
+  \item Double down: I'm six months out right now, and there's meaningful risk that something interrupts the conversion deal (which wrecks my strategy). If the deal solidifies and the arbitrage opportunity still exists within a few weeks of the conversion, I want to increase my position.
+  \item Get out: If it looks like the deal will fall apart, I need to exit the trade ASAP. A deal failure would likely crush CC share values. The prospect of less market dilution in the traded UB shares might increase UB's price. In that situation, my long position is falling and my short position is rising, which makes both trades lose. I need to get out of both as quickly as possible to ensure I don't get ruined by the short.
+  \item Revisit with interest: If the deal looks likely and one side of the valuation looks increasingly convincing, invest more in that side of the trade. For example, if UB turns profitable and keeps growing without CC's implied valuation reflecting these developments, I'm inclined to asymmetrically bet on the long trade. The reverse if CC's conditions worsen (although that might affect the equity conversion, which is a higher priority development than this).
+  \item Get out: If UB starts really growing and diverging from CC's valuation, I need to start winding down the short. While huge divergence makes the spread in my trade even more lucrative, I could get margin called while my shorts are in the red before CC's conversion. That could force me to sell my CC shares (and more) to cover the margin call, unwinding the whole trade in a big loss.
+\end{itemize}
+
+\textbf{(2.iii)}
+
+I'm starting with five percent of my capital on this trade. 
+
+It seems like a legitimate arbitrage opportunity with an attractive ~16 percent ROI in six months. The trade is somewhat insulated from broad market forces, which satisfies my mandate as a hedge fund. Assuming I can independently verify a high likelihood the equity conversion goes through, this trade seems like a great investment.
+
+However, it comes with serious risks. If the equity conversion doesn't go through, I'll likely need to quickly exit the trade at a loss. The same is true for delays, and any delay during which my shorts get margin called would be disasterious. Finally as an industry newcomer, it's surprising to see such a juicy trade hanging out like this. Is it possible others know more than I do? 
+
+It might be wise to search for historical precedent on this situation to see how frequent desirable outcomes are (and what possible outcomes I might not be considering).
+
+\textbf{(2.iv)}
+
+Best case scenario: The conversion goes through, and CC's independent valuation also grows along the way. As the conversion approaches, the valuation gap stays steady or grows, and I double my position shortly before the conversion occurs. I exit the position immediately after conversion, profiting the valuation gap and earning some extra from my appreciated CC investment. 
+
+Worst case scenario: There's a disaster at CC that also causes the conversion falls through. CC is acquired in a fire sale by a competitor of UB, and I'm forced to exit the CC long position at a loss. Because the acquisition improves UB's operational prospects, UB stock spikes on news of the acquisition. This triggers a short squeeze as I try to unwind the UB short. All the fund reserves get burned in the squeeze, and my fund dissolves unable to cover the UB short.  
+
+\end{document}
